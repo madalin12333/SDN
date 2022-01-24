@@ -81,10 +81,6 @@ def main():
         elem.remove_invalid_records()
 
     for elem in nw_collection:
-        #setattr(self, elem.entries['address'], lambda d: d['address'] )
-        #print(elem.ipv4_network)
-        #print(sorted(elem.entries))
-        #print((elem.ipv4_network))
         print(sorted(elem.entries, key=lambda d: d['address']))
 
 
