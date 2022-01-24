@@ -1,5 +1,5 @@
 import unittest
-from ro_interview_assignment.data_structures.datacenter import Datacenter
+from data_structures.datacenter import Datacenter
 
 
 class TestRemoveInvalidCluster(unittest.TestCase):
