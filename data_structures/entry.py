@@ -4,10 +4,7 @@ class Entry:
 
     def __init__(self, address, available, last_used):
 
-        self.address = str(address)
-        self.available = bool(available)
-        self.last_used = datetime(last_used)
-
+        
         """
         define new method to chanke gey argument of sorted and call it with self.new-method in comstructor body
         Constructor for Entry data structure.
@@ -16,8 +13,10 @@ class Entry:
         self.available -> bool
         self.last_used -> datetime
         """
-
-        pass
+        
+        self.address = str(address)
+        self.available = bool(available)
+        self.last_used = datetime(last_used)
     
     def apply_key(func):
         @functools.wraps(func)
