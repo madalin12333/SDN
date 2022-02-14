@@ -23,7 +23,7 @@ class Entry:
         def set_key(*args, **kwargs):
             value = func(*args, key = lambda i : i ['age'])
 
-        r   eturn value
+        return value
     return set_key
 
 sorted = apply_key(sorted)
