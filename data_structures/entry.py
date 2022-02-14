@@ -18,3 +18,13 @@ class Entry:
         """
 
         pass
+    
+    def apply_key(func):
+        @functools.wraps(func)
+        def set_key(*args, **kwargs):
+            value = func(*args, key = lambda i : i ['age'])
+
+        r   eturn value
+    return set_key
+
+sorted = apply_key(sorted)
